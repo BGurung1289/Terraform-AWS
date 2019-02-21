@@ -8,6 +8,8 @@ Prerequisites:
 
 - Create a key pair on the EC2 dashboard of AWS
 
+- Configure the variable.tf file with the correct information
+
 Instructions:
 
 ``` 
