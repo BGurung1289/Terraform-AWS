@@ -21,4 +21,12 @@ terraform apply <filename>tfplan
 ```
 
 
+Creates:
+
+- 1 VPC
+- 2 Public Subnets
+- 1 Internet gateway
+- 1 route table
+- 1 security group
+- 2 AWS instances
 
