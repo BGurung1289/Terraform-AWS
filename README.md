@@ -7,10 +7,12 @@ Create a key pair on the EC2 dashboard of AWS
 
 Instructions:
 
-``` cd into the base folder
-``` terraform init
-``` terraform plan -out <filename>.tfplan
-``` terraform apply <filename>tfplan
+``` 
+cd into the base folder
+terraform init
+terraform plan -out <filename>.tfplan
+terraform apply <filename>tfplan
+```
 
 
 
