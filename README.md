@@ -10,7 +10,7 @@ Instructions:
 cd into the base folder
 terraform init
 terraform plan -out <filename>.tfplan
-terraform apply <filename>tfplan
+terraform apply <filename>.tfplan
 ```
 
 Creates:
