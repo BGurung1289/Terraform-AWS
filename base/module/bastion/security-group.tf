@@ -1,7 +1,9 @@
+variable "wait_for_vpc" {}
 
-resource "aws_security_group" "mainSecurityGroup" {
+
+resource "aws_security_group" "bastionSecurityGroup" {
     name = "main security group"
-    vpc_id = "${aws_vpc.vpc.id}"
+    vpc_id = "${var.wait_for_vpc}"
 
     ingress{
         protocol = "tcp"
@@ -9,7 +11,10 @@ resource "aws_security_group" "mainSecurityGroup" {
         to_port = 22
         cidr_blocks = ["0.0.0.0/0"]
     }
-    ## to allow us to ssh into the machines if required
+
+    ## to allow us to ssh into the machines which is required as bastions
+    ## are used to access an instance in the private subnet
+
     egress{
         protocol = -1
         from_port = 0

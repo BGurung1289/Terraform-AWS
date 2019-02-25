@@ -8,6 +8,6 @@ output "wait_for_subnet_id_2" {
     value = "${aws_subnet.public.1.id}"
 }
 
-output "wait_for_security_group" {
-    value = "${aws_security_group.mainSecurityGroup.id}"
+output "wait_for_vpc_id" {
+    value = "${aws_vpc.vpc.id}"
 }
