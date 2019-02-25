@@ -16,7 +16,7 @@ Instructions:
 cd \base
 terraform init
 terraform plan -out <filename>.tfplan
-terraform apply <filename>tfplan
+terraform apply <filename>.tfplan
 
 ```
 
