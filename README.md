@@ -13,7 +13,14 @@ terraform plan -out <filename>.tfplan
 terraform apply <filename>tfplan
 ```
 
+Creates:
 
+- 1 VPC
+- 2 Public Subnets
+- 1 Internet gateway
+- 1 route table
+- 1 security group
+- 2 AWS instances
 - 1 Bastion
 - 1 EFS (Elastic File System)
 - 2 EFS Mount targets
